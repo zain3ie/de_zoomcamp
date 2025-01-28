@@ -1,7 +1,7 @@
 ## Docker Commands
 
 ### PostgreSQL Database Docker
-```bash
+```shell
 docker run -it \
     -e POSTGRES_USER="root" \
     -e POSTGRES_PASSWORD="root" \
@@ -101,10 +101,10 @@ select
     max(trip_distance) as max_trip_distance
 from
     green_taxi_data
-group
-    by pickup_date
-order
-    by max_trip_distance desc
+group by
+    pickup_date
+order by
+    max_trip_distance desc
 ```
 
 ### Three biggest pickup zones
